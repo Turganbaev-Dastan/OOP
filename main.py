@@ -1,16 +1,29 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# class Это структура данных,Которая служит для описания обектов
+from traceback import print_tb
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+class Person:
+    name: str = "Dastan"
+    age: int = 15
+
+    def sleep(self):
+        print(f"{self.name} Спит ")
+
+    def work(self):
+        print(f"{self.name} работает")
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+person_1 = Person()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(person_1.name)
+print(person_1.age)
+person_1.sleep()
+person_1.work()
+
+person_2 = Person()
+person_2.name = "Aybek"
+person_2.age = 31
+print(person_2.name)
+print(person_2.age)
+person_2.sleep()
+person_2.work()
